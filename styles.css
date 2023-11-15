@@ -1,0 +1,403 @@
+/* Global */
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  margin: 0px;
+  font-size: small;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: #1399e6;
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+}
+.news{
+  border-radius: 10px;
+  width: 30px;
+  height: 30px; 
+  padding-left: 30px;
+}
+.title{
+  color: #ffffff;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size:15px;
+ padding-left: 35%
+}
+
+
+/* Navigation */
+.nav-main {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 17px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 5px;
+  background-color: #00000044;
+}
+
+.nav-brand {
+  width: 140px;
+  height: 50px;
+/*  border-radius: 7px;*/
+}
+
+/* Navbar Left */
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li a {
+  padding: 2px;
+  color:#060606;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 30px;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+/* Responsive Button */
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  color:rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* SHOWCASE */
+.showcase {
+  width: 100%px;
+  height: 550px;
+  background: url("img/bosque\ de\ altura.jpg") no-repeat center center/cover;
+  border-radius: 3px;
+  display: flex;
+ flex-wrap:wrap;
+  flex-direction: columns;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.showcase h2,
+.showcase p {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align:center;
+}
+.showcase p {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align:center;
+}
+
+.showcase .btn {
+  border-radius: 5px;
+  background: #ffffffce;
+}
+.provincias{
+  margin-bottom: 0px;
+  display:flex;
+  flex-wrap:wrap;
+  font-size: 17px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: #f2f2f2;
+  background-image: linear-gradient(to right, #5084ab 0%, #517fa4 100%);
+}
+/* News Cards */
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;;
+  background-image: linear-gradient(to right, #5084ab 0%, #517fa4 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.news-cards img {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  height: 210px;
+  border-radius: 5px 5px 5px 5px;
+  border-top: 5px;
+}
+
+.news-cards h3 {
+  font-size: 18px;
+  margin: 10px 10px;
+  color: #f2f2f2;
+}
+.news-cards p{
+  font-size: small;
+  align-items: center;
+  margin: 10px ;
+  width:95%;
+  color: #f2f2f2;
+}
+.news-cards a {
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  margin: 10px 10px;
+}
+
+/* CARDS BANNER ONE */
+.cards-banner-one {
+  width: 100%;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+  display: flex;
+  flex-wrap:wrap;
+  border-radius: 3px;
+}
+.ubicacion{
+  width: fit-content;
+  height: fit-content;
+  padding: 60px;
+  border-radius: 5px;
+}
+
+.cards-banner-one .content {
+  width: 60%;
+  padding: 30px 0px 20px 30px;
+  color: #fff;
+}
+
+.cards-banner-one p,
+.cards-banner-two p {
+  margin: 10px 0 20px 0;
+  color: #fff;
+  width:100%;
+}
+
+/* CARDS BANNER TWO*/
+.cards-banner-two {
+  width: 100%;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap:wrap;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.cards-banner-two .content {
+  width: 100%;
+  padding: 30px 0 20px 30px;
+}
+
+/* Follow */
+.social {
+  margin: 50px;
+}
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  width:100%;
+}
+.links {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+.links a {
+  margin: 0 30px;
+}
+
+.links a i {
+  font-size: 3rem;
+  color: #060606;
+}
+
+/* Links */
+.footer-links {
+  background: #0e0e0e;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 35px 0;
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width:100%;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-container ul {
+  margin: 0 auto;
+  padding-left: 3px;
+}
+
+.footer-links li {
+  line-height: 2.8;
+}
+.footer h3{
+  padding-left: 30%;
+}
+.footer {
+  background: #0e0e0e;
+  color: #f7f3f3;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+}
+@media (max-width: 700px) {
+  .header{
+    width: 100%;
+    height: 40px;
+    background-color: #1c99ec;
+    display: flex-box;
+    align-items: center;
+  }
+  .title{
+    color: #ffffff;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size:10px;
+   padding-left: 20%;
+   text-decoration: none;
+   
+  }
+  .container {
+    width: 100%;
+    margin: 0px;
+  }
+  .nav-main{
+    width:100%;
+    height: 76px;
+  }
+	  .nav-main ul.nav-menu li {
+    padding: 20px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+   .menu-btn {
+  display: block;
+  z-index: 2;
+   }
+  .nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #797979ac;
+    width: 50%;
+    height: auto;
+    border-right: rgb(255, 255, 255) 1px solid;
+    opacity: 0.9;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-in-out;
+  }
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-20px);
+  }
+  .showcase h2,
+  .showcase p{
+    width: 100%;
+    font-size: 17px;
+  margin-bottom: 10px;
+  }
+  .cards-banner-one .content {
+    width: 95%;
+    padding: 30px 0px 20px 30px;
+    color: #fff;
+  }
+  .news-cards {
+  width:100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(1, 95%);
+  padding-left:8px;
+}
+.ubicacion{
+  display: none;
+}
+
+.social{
+  align-items: center;
+}
+.social p{
+  font-size: 17px;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(3,25% );
+  width:80%;
+}
+.footer{
+  margin-top: 0PX;
+  font-size: 10px;
+}
+.footer-links .footer-container {
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-links .footer-container ul {
+  text-align: center;
+}
+.footer h3{
+  padding-left: 25%;
+}
+}
+
