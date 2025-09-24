@@ -1,275 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APURIMAC.com</title>
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <!-- CUSTOM CSS -->
-  <link rel="stylesheet" href="stylesFauna.css">
-  <link rel="shortcut icon" href="imagenes/icono.ico" type="image/x-icon">
+  <meta name="description"
+    content="Descubre la fauna única de Apurímac - Animales andinos, especies nativas y biodiversidad animal de los Andes peruanos">
+  <title>Fauna de Apurímac - Biodiversidad Animal Andina</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../global-styles.css">
+  <link rel="icon" href="formulario/icono.ico" type="image/x-icon">
 </head>
 
 <body>
-  <div class="container">
-    <!-- Navigation -->
-    <nav class="nav-main">
-      <!-- Brand -->
-      <img src="imagenes/logoUnamba.png" alt="Universidad nacional micaela bastidas Logo" class="nav-brand">
-      <!-- Left Nav -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="imagenes/logoUnamba.png" alt="Universidad Nacional Micaela Bastidas" class="brand-logo">
+      </div>
+
       <ul class="nav-menu">
-        <li>
-          <a href="../index.html">INICIO</a>
-        </li>
-        <li>
-          <a href="#">APURIMAC</a>
-        </li>
-        <li>
-          <a href="ampay.html">SANTUARIO NACIONAL</a>
-        </li>
-        <li>
-          <a href="flora.html">FLORA</a>
-        </li>
-        <li>
-          <a href="fauna.html">FAUNA</a>
-        </li>
-        <li>
-          <a href="nosotros.html">NOSOTROS</a>
-        </li>
+        <li><a href="../index.html" class="nav-link">Inicio</a></li>
+        <li><a href="../index.html#apurimac" class="nav-link">Apurímac</a></li>
+        <li><a href="ampay.html" class="nav-link">Santuario Nacional</a></li>
+        <li><a href="flora.html" class="nav-link">Flora</a></li>
+        <li><a href="fauna.html" class="nav-link active">Fauna</a></li>
+        <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
       </ul>
 
-      <!-- Right Nav -->
-      <ul class="nav-menu-right">
-        <li>
-          <a href="#">
-            <i class="fas fa-search"></i>
-          </a>
-        </li>
-      </ul>
-      <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Buscar">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="menu-toggle" aria-label="Menú">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
       </div>
-    </nav>
-    <hr>
+    </div>
+  </nav>
 
-    <!-- SHOWCASE -->
-    <header class="showcase">
-      <h2>Fauna en la Region de Apurimac</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dolor laudantium rerum, excepturi est praesentium
-        natus qui? Tempora rerum, numquam inventore eligendi in, nostrum reprehenderit, eum cumque fugit eaque
-        similique!</p>
-    </header>
-    <section class="cards-banner-one">
-      <div class="content">
-        <h2>Lorem, ipsum dolor.</h2>
-        <!-- lorem 20 -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat maxime facilis quasi alias illo, fugiat
-          cupiditate porro dolores tenetur delectus!</p>
+  <!-- Page Header -->
+  <section class="page-header"
+    style="background-image: linear-gradient(rgba(30, 64, 175, 0.7), rgba(37, 99, 235, 0.7)), url('imagenes/faunaprincipal.webp');">
+    <div class="container">
+      <div class="page-header-content">
+        <h1 class="title-highlight">Fauna de Apurímac</h1>
+        <p class="title-subtitle">
+          Explora la rica diversidad animal de los Andes peruanos, desde majestuosos cóndores
+          hasta especies endémicas que habitan los diversos ecosistemas de Apurímac.
+        </p>
+        <div class="page-breadcrumb">
+          <a href="../index.html" class="breadcrumb-link">Inicio</a>
+          <span> / </span>
+          <span>Fauna</span>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- NEWS CARDS -->
-    <div class="news-cards">
-      <div class="card">
-        <img src="imagenes/flora1.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
-       
-      </div>
-      <div class="card">
-        <img src="imagenes/flora1.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
-       
-      </div>
-      <div class="card">
-        <img src="imagenes/flora1.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+  <!-- Introduction Section -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Diversidad Animal de los Andes</h2>
+        <p class="section-subtitle">
+          La fauna apurimeña incluye especies adaptadas a diferentes altitudes, desde los valles templados
+          hasta las punas altoandinas, cada una con características únicas desarrolladas a lo largo de milenios.
         </p>
       </div>
-      <div class="card">
-        <img src="imagenes/flora1.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
-      </div>
-      
-    </div>
-    <!-- NEWS CARDS -->
-    <div class="news-cards">
-      <div class="card">
-        <img src="imagenes/flora1.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
-       
-      </div>
-      <div class="card">
-        <img src="imagenes/flora1.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
-      </div>
-      <div class="card">
-        <img src="imagenes/flora1.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
-      </div>
-      <div class="card">
-        <img src="imagenes/flora1.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
-      </div>
-    </div>
-     <!-- NEWS CARDS -->
-     <div class="news-cards">
-        <div class="card">
-          <img src="imagenes/flora1.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-            doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-          </p>
-         
-        </div>
-        <div class="card">
-          <img src="imagenes/flora1.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-            doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-          </p>
-        </div>
-        <div class="card">
-          <img src="imagenes/flora1.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-            doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-          </p>
-        </div>
-        <div class="card">
-          <img src="imagenes/flora1.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-            doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-          </p>
-        </div>
-      </div>
-       <!-- NEWS CARDS -->
-    <div class="news-cards">
-        <div class="card">
-          <img src="imagenes/flora1.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-            doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-          </p>
-         
-        </div>
-        <div class="card">
-          <img src="imagenes/flora1.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-            doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-          </p>
-        </div>
-        <div class="card">
-          <img src="imagenes/flora1.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-            doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-          </p>
-        </div>
-        <div class="card">
-          <img src="imagenes/flora1.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-            doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-          </p>
-        </div>
-      </div>
-    <!-- Follow -->
-    <section class="social">
-      <p>Redes Sociales</p>
-      <div class="links">
-        <a href="https://facebook.com">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://twitter.com">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://linkdin.com">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </section>
 
-  <!-- Footer Links -->
-  <div class="footer-links">
-    <div class="footer-container">
-      <ul>
-        <li>
-          <a href="#">
-            <h3>Referencias</h3>
-          </a>
-        </li>
-        <li>
-          <a href="#">GobApurimac</a>
-        </li>
-        <li>
-          <a href="#">Muniabancay</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">
-            <h3>pexels</h3>
-          </a>
-        </li>
-        <li>
-          <a href="#">pixabay</a>
-        </li>
-        <li>
-          <a href="#">pinterest</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">
-            <h3>Mincetur</h3>
-          </a>
-        </li>
-        <li>
-          <a href="#">dircetur</a>
-        </li>
-        <li>
-          <a href="#">PeruGob</a>
-        </li>
-      </ul>
+      <div class="content-grid content-grid-2">
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-dove"></i>
+          </div>
+          <h3 class="info-card-title">Aves Andinas</h3>
+          <p class="info-card-description">
+            Desde el majestuoso cóndor andino hasta pequeñas aves endémicas, Apurímac alberga una rica
+            diversidad ornitológica adaptada a diferentes pisos ecológicos.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-paw"></i>
+          </div>
+          <h3 class="info-card-title">Mamíferos Nativos</h3>
+          <p class="info-card-description">
+            Vicuñas, venados andinos, vizcachas y otros mamíferos han desarrollado adaptaciones únicas
+            para sobrevivir en los ecosistemas de alta montaña.
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Fauna Gallery Section -->
+  <section class="content-section bg-secondary">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Especies Emblemáticas</h2>
+        <p class="section-subtitle">
+          Conoce los animales más representativos que habitan los diversos ecosistemas de Apurímac
+        </p>
+      </div>
+
+      <div class="gallery gallery-2x2">
+        <div class="gallery-item">
+          <img src="imagenes/default.jpg" alt="Cóndor Andino - Rey de los cielos" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Cóndor Andino</h4>
+            <p>El ave voladora más grande del mundo, símbolo nacional del Perú y guardián de las montañas andinas.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpg" alt="Vicuña - Camélido andino" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Vicuña</h4>
+            <p>Camélido silvestre de fibra más fina del mundo, habita las punas altoandinas en manadas familiares.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpg" alt="Venado Andino - Luicho" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Venado Andino (Luicho)</h4>
+            <p>Cérvido nativo que habita bosques andinos, conocido localmente como luicho, especie en conservación.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpg" alt="Vizcacha - Roedor andino" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Vizcacha</h4>
+            <p>Roedor andino que vive en colonias entre rocas, excelente saltador adaptado a terrenos escarpados.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpg" alt="Huallata - Ganso andino" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Huallata</h4>
+            <p>Ganso andino que habita lagunas de altura, ave acuática emblemática de los humedales altoandinos.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpg" alt="Puma Andino - Felino sagrado" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Puma Andino</h4>
+            <p>Felino sagrado de las culturas andinas, depredador tope que mantiene el equilibrio ecológico.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpg" alt="Zorro Andino - Atoj" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Zorro Andino (Atoj)</h4>
+            <p>Cánido adaptado a la vida andina, conocido como "atoj", importante en la mitología local.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpg" alt="Chinchilla - Roedor de montaña" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Chinchilla</h4>
+            <p>Pequeño roedor de pelaje extremadamente suave, habita grietas rocosas en zonas altas.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpg" alt="Rana Andina - Anfibio de altura" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Rana Andina</h4>
+            <p>Anfibio endémico adaptado a condiciones extremas de altura y temperatura variable.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpgg" alt="Mariposa Andina - Lepidóptero de altura" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Mariposa Andina</h4>
+            <p>Lepidópteros únicos adaptados a la vida en altura, importantes polinizadores de flora nativa.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpgg" alt="Lagarto Andino - Reptil de altura" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Lagarto Andino</h4>
+            <p>Reptil adaptado a condiciones andinas, regulador natural de poblaciones de insectos.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpgg" alt="Colibrí Andino - Picaflor de altura" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Colibrí Andino</h4>
+            <p>Pequeña ave de vuelo acrobático, polinizador esencial de flores andinas de altura.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Footer -->
-    <footer class="footer">
-    <h3>Universidad Nacional Micaela Bastidas de Apurimac</h3>
-    </footer>
-  </div>
-  <!-- Scroll Reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="../main.js"></script>
+  </section>
+
+  <!-- Ecosystems Section -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Ecosistemas y Hábitats</h2>
+      </div>
+
+      <div class="content-grid content-grid-3">
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-mountain"></i>
+          </div>
+          <h3 class="info-card-title">Puna Altoandina</h3>
+          <p class="info-card-description">
+            Ecosistema de altura donde habitan vicuñas, vizcachas y aves como la huallata.
+            Temperatura extrema y vegetación especializada.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-tree"></i>
+          </div>
+          <h3 class="info-card-title">Bosques de Queñual</h3>
+          <p class="info-card-description">
+            Refugio de mamíferos como venados y osos andinos. Bosques únicos que
+            protegen fuentes de agua y biodiversidad.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-water"></i>
+          </div>
+          <h3 class="info-card-title">Humedales Andinos</h3>
+          <p class="info-card-description">
+            Bofedales y lagunas que albergan aves acuáticas, anfibios endémicos
+            y son fuente de agua para la fauna terrestre.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conservation Section -->
+  <section class="content-section bg-secondary">
+    <div class="container">
+      <div class="content-grid content-grid-2">
+        <div>
+          <h2>Conservación de la Fauna Andina</h2>
+          <p>
+            La fauna de Apurímac enfrenta desafíos por el cambio climático y la actividad humana.
+            Muchas especies son endémicas y requieren protección especial para su supervivencia.
+          </p>
+          <p>
+            Los esfuerzos de conservación incluyen la protección de hábitats críticos como el
+            Santuario Nacional de Ampay, que alberga especies únicas de bosques de queñual.
+          </p>
+
+          <div class="content-grid content-grid-2 mt-lg">
+            <div class="info-card">
+              <h4>Estado de Conservación</h4>
+              <ul style="list-style: none; padding: 0; margin-top: var(--space-md);">
+                <li class="mb-sm"><i class="fas fa-exclamation-triangle" style="color: var(--warning-color);"></i>
+                  Cóndor: Casi Amenazado</li>
+                <li class="mb-sm"><i class="fas fa-shield-alt" style="color: var(--success-color);"></i> Vicuña:
+                  Protegida</li>
+                <li class="mb-sm"><i class="fas fa-exclamation-triangle" style="color: var(--warning-color);"></i>
+                  Venado Andino: Vulnerable</li>
+                <li class="mb-sm"><i class="fas fa-check" style="color: var(--primary-color);"></i> Vizcacha: Estable
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <h4>Acciones de Conservación</h4>
+              <ul style="list-style: none; padding: 0; margin-top: var(--space-md);">
+                <li class="mb-sm"><i class="fas fa-seedling" style="color: var(--secondary-color);"></i> Protección de
+                  hábitats</li>
+                <li class="mb-sm"><i class="fas fa-eye" style="color: var(--primary-color);"></i> Monitoreo poblacional
+                </li>
+                <li class="mb-sm"><i class="fas fa-graduation-cap" style="color: var(--accent-color);"></i> Educación
+                  ambiental</li>
+                <li class="mb-sm"><i class="fas fa-hands-helping" style="color: var(--secondary-color);"></i>
+                  Participación comunitaria</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-lg">
+            <a href="../formulario/form.html" class="btn btn-primary">
+              <i class="fas fa-heart"></i>
+              Apoya la Conservación
+            </a>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/default.jpgpal.webp" alt="Ecosistema andino con fauna diversa" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Biodiversidad Andina</h4>
+            <p>Los ecosistemas de Apurímac albergan una fauna única adaptada a condiciones extremas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Apurímac Natural</h3>
+          <p>Descubre la riqueza natural y cultural del corazón de los Andes peruanos.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+
+
+        <div class="footer-section">
+          <h3>Universidad</h3>
+          <p>Universidad Nacional Micaela Bastidas de Apurímac</p>
+          <p>Facultad de Ciencias</p>
+          <p>Abancay - Apurímac - Perú</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Apurímac Natural - UNAMBA. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../global-scripts.js"></script>
 </body>
 
 </html>

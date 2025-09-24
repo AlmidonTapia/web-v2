@@ -1,174 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APURIMAC.com</title>
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <!-- CUSTOM CSS -->
-  <link rel="stylesheet" href="stylesNosotros.css">
-  <link rel="shortcut icon" href="imagenes/icono.ico" type="image/x-icon">
+  <meta name="description"
+    content="Conoce nuestro equipo y la misión de preservar y difundir el patrimonio natural de Apurímac">
+  <title>Nosotros - Apurímac Natural UNAMBA</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../global-styles.css">
+  <link rel="icon" href="formulario/icono.ico" type="image/x-icon">
 </head>
 
 <body>
-  <div class="container">
-    <!-- Navigation -->
-    <nav class="nav-main">
-      <!-- Brand -->
-      <img src="imagenes/logoUnamba.png" alt="Universidad nacional micaela bastidas Logo" class="nav-brand">
-      <!-- Left Nav -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="imagenes/logoUnamba.png" alt="Universidad Nacional Micaela Bastidas" class="brand-logo">
+      </div>
+
       <ul class="nav-menu">
-        <li>
-          <a href="../index.html">INICIO</a>
-        </li>
-        <li>
-          <a href="#">APURIMAC</a>
-        </li>
-        <li>
-          <a href="ampay.html">SANTUARIO NACIONAL</a>
-        </li>
-        <li>
-          <a href="flora.html">FLORA</a>
-        </li>
-        <li>
-          <a href="fauna.html">FAUNA</a>
-        </li>
-        <li>
-          <a href="nosotros.html">NOSOTROS</a>
-        </li>
+        <li><a href="../index.html" class="nav-link">Inicio</a></li>
+        <li><a href="../index.html#apurimac" class="nav-link">Apurímac</a></li>
+        <li><a href="ampay.html" class="nav-link">Santuario Nacional</a></li>
+        <li><a href="flora.html" class="nav-link">Flora</a></li>
+        <li><a href="fauna.html" class="nav-link">Fauna</a></li>
+        <li><a href="nosotros.html" class="nav-link active">Nosotros</a></li>
       </ul>
 
-      <!-- Right Nav -->
-      <ul class="nav-menu-right">
-        <li>
-          <a href="#">
-            <i class="fas fa-search"></i>
-          </a>
-        </li>
-      </ul>
-      <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Buscar">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="menu-toggle" aria-label="Menú">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
       </div>
-    </nav>
-    <hr>
-
-    <!-- SHOWCASE -->
-    <header class="showcase">
-      <h2>Universidad Nacional Micaela Bastidas</h2>
-      <p>La Universidad Nacional Micaela Bastidas de Apurímac (sigla: UNAMBA) es una universidad pública ubicada en la ciudad de Abancay, Perú.
-      </p>
-    </header>
-    <section class="cards-banner-one">
-      <div class="content">
-       <strong><i>“Formar profesionales humanistas, científicos y tecnológicos logrando calidad en el estudiante, con valores, identidad cultural, responsabilidad social, liderazgo y comprometidos con el desarrollo sostenible”.</i></strong>
-       <hr>
-       <h2>Nosotros</h2>
-        <p>La Escuela Académico Profesional de Ingeniería Informática y Sistemas, forma profesionales capaces de diseñar, desarrollar y gestionar sistemas de información requeridos por las empresas públicas y privadas; administra redes telemáticas y realiza investigación cuyo eje central son las tecnologías de información y comunicación con alto valor ético y responsabilidad social para promover el desarrollo regional y nacional.</p>
-          <a href="https://www.unamba.edu.pe/">leer mas <i class="fas fa-angle-double-right"></i></a>
-        </div>
-    </section>
-     <!-- NEWS CARDS -->
-     <div class="news-cards">
-        <div>
-          <img src="imagenes/flora19.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>       
-        </div>
-        <div>
-          <img src="imagenes/flora19.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-        </div>
-        <div>
-          <img src="imagenes/flora19.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-        </div>
-        <div>
-          <img src="imagenes/flora19.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-        </div>
-        <div>
-          <img src="imagenes/flora19.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-        </div>
-        <div>
-          <img src="imagenes/flora19.jpg" alt="" />
-          <h3>Lorem, ipsum dolor.</h3>
-        </div>
-      </div>
-      
-      </div>
-      <!-- Follow -->
-      <section class="social">
-        <p>Redes Sociales</p>
-        <div class="links">
-          <a href="https://facebook.com">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://twitter.com">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://linkdin.com">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </section>
-  
-    <!-- Footer Links -->
-    <div class="footer-links">
-      <div class="footer-container">
-        <ul>
-          <li>
-            <a href="#">
-              <h3>Referencias</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#">GobApurimac</a>
-          </li>
-          <li>
-            <a href="#">Muniabancay</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">
-              <h3>pexels</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#">pixabay</a>
-          </li>
-          <li>
-            <a href="#">pinterest</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">
-              <h3>Mincetur</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#">dircetur</a>
-          </li>
-          <li>
-            <a href="#">PeruGob</a>
-          </li>
-        </ul>
-      </div>
-      </div>
-      <!-- Footer -->
-      <footer class="footer">
-      <h3>Universidad Nacional Micaela Bastidas de Apurimac</h3>
-      </footer>
     </div>
+  </nav>
 
-  <!-- Scroll Reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="../main.js"></script>
+  <!-- Page Header -->
+  <section class="page-header"
+    style="background-image: linear-gradient(rgba(30, 64, 175, 0.7), rgba(37, 99, 235, 0.7)), url('imagenes/nosotros.jpg');">
+    <div class="container">
+      <div class="page-header-content">
+        <h1 class="title-highlight">Nosotros</h1>
+        <p class="title-subtitle">
+          Somos un equipo comprometido con la conservación, investigación y difusión del patrimonio
+          natural y cultural de Apurímac, formando parte de la Universidad Nacional Micaela Bastidas.
+        </p>
+        <div class="page-breadcrumb">
+          <a href="../index.html" class="breadcrumb-link">Inicio</a>
+          <span> / </span>
+          <span>Nosotros</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="content-section">
+    <div class="container">
+      <div class="content-grid content-grid-2">
+        <div>
+          <h2>Nuestra Misión</h2>
+          <p>
+            Promover el conocimiento, conservación y valoración del patrimonio natural de Apurímac
+            a través de la investigación científica, educación ambiental y difusión cultural,
+            contribuyendo al desarrollo sostenible de la región.
+          </p>
+          <p>
+            Trabajamos para crear conciencia sobre la importancia de preservar los ecosistemas únicos
+            de Apurímac, desde el Santuario Nacional de Ampay hasta los diversos pisos ecológicos
+            que caracterizan nuestra región andina.
+          </p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="imagenes/nosotros.jpg" alt="Equipo de investigación UNAMBA" class="gallery-image">
+          <div class="gallery-caption">
+            <h4>Universidad Nacional Micaela Bastidas</h4>
+            <p>Institución de educación superior comprometida con el desarrollo regional y la investigación científica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="content-section bg-secondary">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Nuestros Valores</h2>
+        <p class="section-subtitle">
+          Principios que guían nuestro trabajo en la conservación y difusión del patrimonio natural
+        </p>
+      </div>
+
+      <div class="content-grid content-grid-3">
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3 class="info-card-title">Conservación</h3>
+          <p class="info-card-description">
+            Compromiso firme con la protección de los ecosistemas y especies únicas de Apurímac
+            para las futuras generaciones.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-microscope"></i>
+          </div>
+          <h3 class="info-card-title">Investigación</h3>
+          <p class="info-card-description">
+            Desarrollo de estudios científicos rigurosos para comprender mejor la biodiversidad
+            y los procesos ecológicos regionales.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="info-card-title">Educación</h3>
+          <p class="info-card-description">
+            Transmisión del conocimiento a la comunidad universitaria y la sociedad en general
+            sobre la importancia del patrimonio natural.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="info-card-title">Participación</h3>
+          <p class="info-card-description">
+            Involucrar a las comunidades locales en los esfuerzos de conservación y valoración
+            del patrimonio natural y cultural.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3 class="info-card-title">Sostenibilidad</h3>
+          <p class="info-card-description">
+            Promover prácticas que permitan el desarrollo regional sin comprometer la integridad
+            de los ecosistemas naturales.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3 class="info-card-title">Compromiso</h3>
+          <p class="info-card-description">
+            Dedicación apasionada al trabajo de conservación, investigación y difusión del
+            patrimonio natural de Apurímac.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- University Section -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Universidad Nacional Micaela Bastidas de Apurímac</h2>
+        <p class="section-subtitle">
+          Institución de educación superior que lidera el desarrollo académico, científico y tecnológico en la región
+        </p>
+      </div>
+
+      <div class="content-grid content-grid-2">
+        <div>
+          <h3>Historia y Legado</h3>
+          <p>
+            La Universidad Nacional Micaela Bastidas de Apurímac (UNAMBA) fue creada para formar
+            profesionales comprometidos con el desarrollo regional y nacional. Lleva el nombre de
+            Micaela Bastidas, heroína de la independencia y símbolo de la lucha por la justicia social.
+          </p>
+
+          <h3 class="mt-lg">Facultades y Programas</h3>
+          <p>
+            A través de sus diversas facultades, UNAMBA desarrolla programas académicos y de
+            investigación que responden a las necesidades regionales, incluyendo estudios en
+            ciencias naturales, ingeniería, educación y ciencias sociales.
+          </p>
+
+          <div class="mt-lg">
+            <h4>Áreas de Investigación:</h4>
+            <ul style="list-style: none; padding: 0; margin-top: var(--space-md);">
+              <li class="mb-sm"><i class="fas fa-check" style="color: var(--primary-color);"></i> Biodiversidad y
+                Conservación</li>
+              <li class="mb-sm"><i class="fas fa-check" style="color: var(--primary-color);"></i> Recursos Naturales
+              </li>
+              <li class="mb-sm"><i class="fas fa-check" style="color: var(--primary-color);"></i> Desarrollo Sostenible
+              </li>
+              <li class="mb-sm"><i class="fas fa-check" style="color: var(--primary-color);"></i> Patrimonio Cultural
+              </li>
+              <li class="mb-sm"><i class="fas fa-check" style="color: var(--primary-color);"></i> Innovación Tecnológica
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>Datos Institucionales</h3>
+          <div class="mt-md">
+            <div class="mb-md">
+              <strong>Ubicación:</strong><br>
+              Abancay, Apurímac, Perú
+            </div>
+
+            <div class="mb-md">
+              <strong>Fundación:</strong><br>
+              Universidad pública de la región Apurímac
+            </div>
+
+            <div class="mb-md">
+              <strong>Campus:</strong><br>
+              Tamburco, Abancay
+            </div>
+
+            <div class="mb-md">
+              <strong>Estudiantes:</strong><br>
+              Miles de estudiantes de la región y el país
+            </div>
+
+            <div class="mb-md">
+              <strong>Investigación:</strong><br>
+              Múltiples proyectos de investigación regional
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="content-section bg-secondary">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contacto y Colaboración</h2>
+        <p class="section-subtitle">
+          ¿Interesado en colaborar con nuestros proyectos de conservación e investigación?
+        </p>
+      </div>
+
+      <div class="content-grid content-grid-2">
+        <div class="info-card">
+          <h3>Información de Contacto</h3>
+          <div class="mt-md">
+            <div class="mb-md">
+              <i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: var(--space-sm);"></i>
+              <strong>Dirección:</strong><br>
+              Universidad Nacional Micaela Bastidas<br>
+              Av. Centenario 103, Abancay, Apurímac
+            </div>
+
+            <div class="mb-md">
+              <i class="fas fa-phone" style="color: var(--primary-color); margin-right: var(--space-sm);"></i>
+              <strong>Teléfono:</strong><br>
+              (083) 322-175
+            </div>
+
+            <div class="mb-md">
+              <i class="fas fa-envelope" style="color: var(--primary-color); margin-right: var(--space-sm);"></i>
+              <strong>Email:</strong><br>
+              info@unamba.edu.pe
+            </div>
+
+            <div class="mb-md">
+              <i class="fas fa-globe" style="color: var(--primary-color); margin-right: var(--space-sm);"></i>
+              <strong>Web:</strong><br>
+              www.unamba.edu.pe
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Formas de Colaborar</h3>
+          <p>
+            Invitamos a estudiantes, investigadores, organizaciones y ciudadanos comprometidos
+            a unirse a nuestros esfuerzos de conservación y difusión del patrimonio natural.
+          </p>
+
+          <div class="mt-lg">
+            <a href="../formulario/form.html" class="btn btn-primary mb-md">
+              <i class="fas fa-user-plus"></i>
+              Únete a Nosotros
+            </a>
+
+            <a href="#" class="btn btn-outline">
+              <i class="fas fa-download"></i>
+              Descargar Información
+            </a>
+          </div>
+
+          <div class="social-links mt-lg">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Apurímac Natural</h3>
+          <p>Descubre la riqueza natural y cultural del corazón de los Andes peruanos.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        
+
+        <div class="footer-section">
+          <h3>Universidad</h3>
+          <p>Universidad Nacional Micaela Bastidas de Apurímac</p>
+          <p>Facultad de Ciencias</p>
+          <p>Abancay - Apurímac - Perú</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Apurímac Natural - UNAMBA. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../global-scripts.js"></script>
 </body>
 
 </html>

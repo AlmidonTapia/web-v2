@@ -1,42 +1,170 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <title>formulario de registro</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" href="icono.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Regístrate para recibir información sobre Apurímac y sus atractivos turísticos">
+  <title>Registro - Descubre Apurímac</title>
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../global-styles.css">
+  <link rel="icon" href="icono.ico" type="image/x-icon">
 </head>
+
 <body>
-
-<div class="container">
-  <div class="message signup">
-    <div class="btn-wrapper">
-      <button class="button" id="signup">Sign Up</button>
-      <button class="button" id="login"> Login</button>
+  <!-- Header -->
+  <header class="form-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="../index.html" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          <span>Volver al inicio</span>
+        </a>
+        <div class="logo">
+          <img src="../img/logoUnamba.png" alt="Universidad Nacional Micaela Bastidas" class="logo-img">
+          <h1>Descubre Apurímac</h1>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="form form--signup">
-    <div class="form--heading">Welcome! Sign Up</div>
-    <form autocomplete="off">
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Password">
-      <button class="button">Sign Up</button>
-    </form>
-  </div>
-  <div class="form form--login">
-    <div class="form--heading">Welcome back! </div>
-    <form autocomplete="off">
-      <input type="text" placeholder="Name">
-      <input type="password" placeholder="Password">
-      <button class="button">Login</button>
-    </form>
-  </div>
-</div>
+  </header>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script  src="./script.js"></script>
+  <!-- Main Form Container -->
+  <main class="form-main">
+    <div class="container">
+      <div class="form-container">
+        <!-- Left Side - Information -->
+        <div class="form-info">
+          <div class="info-content">
+            <h2>¡Únete a Nuestra Comunidad!</h2>
+            <p class="info-description">
+              Regístrate para recibir información exclusiva sobre los mejores destinos,
+              eventos culturales y experiencias únicas que Apurímac tiene para ofrecerte.
+            </p>
 
+            <div class="benefits">
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="benefit-text">
+                  <h3>Guías Exclusivas</h3>
+                  <p>Accede a rutas y destinos únicos en Apurímac</p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="benefit-text">
+                  <h3>Eventos Culturales</h3>
+                  <p>Mantente informado sobre festividades y tradiciones</p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <div class="benefit-text">
+                  <h3>Ecoturismo</h3>
+                  <p>Descubre la biodiversidad del Santuario de Ampay</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side - Form -->
+        <div class="form-section">
+          <div class="form-card">
+            <div class="form-header-content">
+              <h2>Crear Cuenta</h2>
+              <p>Completa tus datos para comenzar tu aventura</p>
+            </div>
+
+            <form class="registration-form" id="registrationForm" autocomplete="off">
+              <div class="form-group">
+                <label for="fullName">Nombre Completo</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user input-icon"></i>
+                  <input type="text" id="fullName" name="fullName" placeholder="Ingresa tu nombre completo" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Teléfono (opcional)</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-phone input-icon"></i>
+                  <input type="tel" id="phone" name="phone" placeholder="+51 999 999 999">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="interests">Intereses</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-heart input-icon"></i>
+                  <select id="interests" name="interests" required>
+                    <option value="">Selecciona tu interés principal</option>
+                    <option value="ecoturismo">Ecoturismo y Naturaleza</option>
+                    <option value="cultura">Cultura y Tradiciones</option>
+                    <option value="aventura">Turismo de Aventura</option>
+                    <option value="gastronomia">Gastronomía Local</option>
+                    <option value="historia">Historia y Arqueología</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="newsletter" name="newsletter" checked>
+                  <span class="checkmark"></span>
+                  <span class="checkbox-text">Quiero recibir boletín informativo sobre Apurímac</span>
+                </label>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="terms" name="terms" required>
+                  <span class="checkmark"></span>
+                  <span class="checkbox-text">Acepto los <a href="#" class="link">términos y condiciones</a></span>
+                </label>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span>Registrarme</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+
+            <div class="form-footer">
+              <p>¿Ya tienes una cuenta? <a href="../index.html" class="link">Volver al inicio</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../global-scripts.js"></script>
 </body>
+
 </html>
